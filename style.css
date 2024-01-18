@@ -1,0 +1,17 @@
+body {
+  background-color: rgb(218, 185, 191);
+}
+article {
+  text-align: center;
+  width: 20vw;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  padding-top:10px;
+  padding-bottom: 10px;
+  background-color: rgb(214, 193, 193);
+}
+
+img {
+max-width: 100px;
+}
+
+
