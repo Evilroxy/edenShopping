@@ -21,22 +21,25 @@ function articles(p) {
     document.querySelector("#app").appendChild(article);
   }
 
-  let popUp = document.querySelector(".popUp");
+  popUp = document.querySelector(".popUp");
   const images = document.querySelectorAll(".prev");
 
   for (let i = 0; i < images.length; i++) {
     images[i].addEventListener("click", () => {
-      popUp.innerHTML = "";
+      popUp.innerHTML = "<button>X</button>";
       console.log(products[i]);
-      for (let j = 0; j < products[i].images.length; j++) {
+      for (let newImg = 0; newImg < products[i].images.length; newImg++) {
         let popUpImg = document.createElement("img");
-        popUpImg.setAttribute("src", products[i].images[j]);
+        popUpImg.setAttribute("src", products[i].images[newImg]);
         popUp.appendChild(popUpImg);
+        popUp.style.display = "flex";
       }
+      let button = document.querySelector("button");
+
+      button.addEventListener("click", () => {
+        popUp.style.display = "none";
+      });
     });
-  }
-  if (popUp) {
-    
   }
 }
 articles(products);
