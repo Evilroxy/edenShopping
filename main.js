@@ -28,17 +28,15 @@ function articles(p) {
     images[i].addEventListener("click", () => {
       popUp.innerHTML = "";
       console.log(products[i]);
-      for(let j = 0 ; j < products[i].images.length; j++){
-
-        let popUpImg = document.createElement('img');
-        popUpImg.setAttribute('src', products[i].images[j]);
-        popUp.appendChild(popUpImg)
+      for (let j = 0; j < products[i].images.length; j++) {
+        let popUpImg = document.createElement("img");
+        popUpImg.setAttribute("src", products[i].images[j]);
+        popUp.appendChild(popUpImg);
       }
     });
-
+  }
+  if (popUp) {
+    
   }
 }
 articles(products);
-
-
-

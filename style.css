@@ -1,14 +1,22 @@
 body {
   background-color: rgb(218, 185, 191);
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
   width: 20vw;
   box-shadow: rgba(204, 11, 130, 0.25) 0px 50px 100px -20px, rgb(105, 9, 9) 0px 30px 60px -30px, rgb(194, 19, 135) 0px -2px 6px 0px inset;
   padding-top:10px;
   padding-bottom: 10px;
   background-color: rgb(214, 193, 193);
-
+  margin-bottom: 50px;
 }
 
 img {
@@ -22,20 +30,35 @@ max-width: 100px;
 }
 
 .popUp {
-width: 50vw;
-height: 50vh;
-background-color: beige;
+border-radius: 45px;
+margin-top: 200px;
 display: flex;
 justify-content: center;
 align-items:center;
+width: 50vw;
+height: 50vh;
+background-color: rgb(252, 208, 226);
 position: fixed;
 flex-direction: row;
 gap: 50px;
+box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
 
 .popUp img {
-  display: flex;
-  flex-wrap: wrap;
   width: 10vh;
   height: 10vh;
+}
+
+div button {
+color: rgb(163, 29, 91);
+font-size: large;
+border: none;
+background-color: pink;
+border-radius: 100px;
+margin-left: 650px;
+margin-bottom: 340px;
+}
+
+div button:hover {
+  box-shadow: rgba(172, 17, 139, 0.4) 0px 0px 0px 2px, rgba(165, 67, 141, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
