@@ -15,17 +15,27 @@ img {
 max-width: 100px;
 }
 
-img:hover {
+ article img:hover {
   opacity: 50%;
   transition: all 500ms;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
-.popUp1 {
-width: 100vw;
-height: 100vw;
+.popUp {
+width: 50vw;
+height: 50vh;
 background-color: beige;
 display: flex;
-flex-wrap: wrap;
+justify-content: center;
+align-items:center;
 position: fixed;
+flex-direction: row;
+gap: 50px;
+}
 
+.popUp img {
+  display: flex;
+  flex-wrap: wrap;
+  width: 10vh;
+  height: 10vh;
 }
