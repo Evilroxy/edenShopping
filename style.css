@@ -15,4 +15,17 @@ img {
 max-width: 100px;
 }
 
+img:hover {
+  opacity: 50%;
+  transition: all 500ms;
+}
 
+.popUp1 {
+width: 100vw;
+height: 100vw;
+background-color: beige;
+display: flex;
+flex-wrap: wrap;
+position: fixed;
+
+}
